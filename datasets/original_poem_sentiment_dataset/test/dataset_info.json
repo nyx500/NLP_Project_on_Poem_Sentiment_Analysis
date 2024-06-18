@@ -1,0 +1,71 @@
+{
+  "builder_name": "poem_sentiment",
+  "citation": "@misc{sheng2020investigating,\n      title={Investigating Societal Biases in a Poetry Composition System},\n      author={Emily Sheng and David Uthus},\n      year={2020},\n      eprint={2011.02686},\n      archivePrefix={arXiv},\n      primaryClass={cs.CL}\n}\n",
+  "config_name": "default",
+  "dataset_name": "poem_sentiment",
+  "dataset_size": 59919,
+  "description": "Poem Sentiment is a sentiment dataset of poem verses from Project Gutenberg. This dataset can be used for tasks such as sentiment classification or style transfer for poems.\n",
+  "download_checksums": {
+    "https://raw.githubusercontent.com/google-research-datasets/poem-sentiment/master/data//train.tsv": {
+      "num_bytes": 40567,
+      "checksum": null
+    },
+    "https://raw.githubusercontent.com/google-research-datasets/poem-sentiment/master/data//dev.tsv": {
+      "num_bytes": 4747,
+      "checksum": null
+    },
+    "https://raw.githubusercontent.com/google-research-datasets/poem-sentiment/master/data//test.tsv": {
+      "num_bytes": 4556,
+      "checksum": null
+    }
+  },
+  "download_size": 49870,
+  "features": {
+    "id": {
+      "dtype": "int32",
+      "_type": "Value"
+    },
+    "verse_text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "label": {
+      "names": [
+        "negative",
+        "positive",
+        "no_impact",
+        "mixed"
+      ],
+      "_type": "ClassLabel"
+    }
+  },
+  "homepage": "https://github.com/google-research-datasets/poem-sentiment",
+  "license": "",
+  "size_in_bytes": 109789,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 48551,
+      "num_examples": 892,
+      "dataset_name": "poem_sentiment"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 5784,
+      "num_examples": 105,
+      "dataset_name": "poem_sentiment"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 5584,
+      "num_examples": 104,
+      "dataset_name": "poem_sentiment"
+    }
+  },
+  "version": {
+    "version_str": "1.0.0",
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
